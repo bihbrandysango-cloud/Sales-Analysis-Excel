@@ -116,7 +116,6 @@ sales-analysis/
 ├── README.md                               This file
 ├── LICENSE                                 MIT
 ├── CONTRIBUTING.md                         Contribution guidelines
-├── GITHUB-SETUP.md                         How to publish this repo to GitHub
 ├── .gitignore
 │
 ├── docs/
