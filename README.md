@@ -8,6 +8,7 @@ A full year of 2021 sales transactions, cleaned and shaped into an Excel dashboa
 
 ## Quick links
 
+- 🌐 [Live web dashboard](https://bihbrandysango-cloud.github.io/projects/sales/), which runs in any browser, with slicers, a target tracker and a risk simulator
 - 🌐 [Open the live workbook on OneDrive](https://1drv.ms/x/c/5c96de2b5cf375c8/IQBf8R42OebgSb2fUt9Q7SRJAdcinKj4oXlFcO8hkwxdgyE?e=rtabHb)
 - 📄 [Read the documentation (PDF)](docs/Sales-Analysis-Documentation.pdf)
 - 📊 [Download the Excel workbook](workbook/Sales_Analysis.xlsx)
@@ -60,7 +61,7 @@ The dataset covers 832 transactions across 40 customers, 44 products, 15 countri
 | Months that hit target | **4 of 12** | January, July, October, December |
 | Export region revenue | **$532K** | 54% of total revenue |
 | India country share | **46%** | $453K of total revenue |
-| Top 10 customer share | **53%** | Significant concentration risk |
+| Top 10 customer share | **41.6%** | The largest customer is 6.2% |
 
 ---
 
@@ -100,7 +101,7 @@ Click any image to view full size.
 
 ### 6. Weekly pattern
 
-*Revenue swings across all 52 weeks of the year.*
+*Revenue swings across the 53 week numbers in 2021.*
 
 ![Weekly pattern](docs/screenshots/06-weekly-pattern.jpg)
 
@@ -189,9 +190,9 @@ The workbook is self-contained. No external connections, no Power Query refresh 
 
 3. **India is the single biggest country exposure.** India contributed $453K, 46% of revenue. The remaining 14 countries split the other 54%.
 
-4. **Customer concentration is high.** The top 10 customers carry 53% of revenue. Losing any one of them moves the needle.
+4. **Customer concentration is moderate.** The top 10 of 40 customers carry 41.6% of revenue, and the largest is 6.2%.
 
-5. **Midyear performance collapsed.** April through September averaged $75K monthly against a $93K target. Something specific happened in Q2 and Q3.
+5. **Midyear performance collapsed.** April through September averaged $75K monthly against a $92K target. Five of those six months missed, and only July hit. Something specific happened in Q2 and Q3.
 
 ---
 
@@ -199,10 +200,10 @@ The workbook is self-contained. No external connections, no Power Query refresh 
 
 | Priority | Action | Expected impact |
 |---|---|---|
-| High | Diagnose the Q2-Q3 revenue drop | Find the cause behind six straight months under target |
-| High | Build a top-10-customer retention plan | Protect 53% of revenue with active account management |
+| High | Diagnose the Q2-Q3 revenue drop | Find the cause behind five missed months out of six, April to September |
+| High | Build a top-10-customer retention plan | Protect 41.6% of revenue with active account management |
 | Medium | Diversify beyond India | Reduce 46% country concentration over 3 years |
-| Medium | Recalibrate monthly targets | Fix Q4 targets that were 11% lower than Q1 with no documented reason |
+| Medium | Recalibrate monthly targets | Fix Q4 targets that were 17% lower than Q1 with no documented reason |
 | Low | Add customer profitability tracking | Pair revenue with margin per customer to find truly profitable accounts |
 
 Full discussion in [the documentation PDF](docs/Sales-Analysis-Documentation.pdf).
@@ -216,6 +217,7 @@ Full discussion in [the documentation PDF](docs/Sales-Analysis-Documentation.pdf
 | Data cleaning | Excel formulas, Power Query |
 | Modeling | Pivot tables, derived columns, slicers |
 | Visualization | Excel pivot charts, conditional formatting for target tracking |
+| Live web dashboard | HTML, CSS, JavaScript |
 | Documentation | PowerPoint (editorial deck), PDF export for inline GitHub preview |
 
 ---
